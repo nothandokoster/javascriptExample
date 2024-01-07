@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="heading"><h3>Form validation</h3></div>
+
+    <form>
+      <div class="form-feilds">
+        <input class="input-email" value="" type="email" placeholder="email" />
+        <p class="error-message"></p>
+      </div>
+      <div class="form-feilds">
+        <input
+          class="input-password"
+          value=""
+          type="password"
+          placeholder="password"
+        />
+        <p class="error-message-password"></p>
+      </div>
+
+      <button onsubmit="" class="submit-btn" type="submit">Submit</button>
+    </form>
+  </body>
+  <script type="text/javascript" src="./app.js"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    input {
+      padding: 15px;
+    }
+    button {
+      background-color: green;
+      color: white;
+      padding: 15px;
+      width: 20%;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .error-message {
+      color: red;
+    }
+    .error-message-password {
+      color: red;
+    }
+  </style>
+</html>
